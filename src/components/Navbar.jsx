@@ -20,8 +20,8 @@ export default function Navbar() {
     return (
         <nav
             className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled
-                    ? 'bg-mafia-black/90 backdrop-blur-xl border-b border-white/5 py-3'
-                    : 'bg-transparent py-5'
+                ? 'bg-mafia-black/90 backdrop-blur-xl border-b border-white/5 py-3'
+                : 'bg-transparent py-5'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -54,7 +54,7 @@ export default function Navbar() {
                     </a>
                 </div>
 
-                {/* Mobile Hamburger */}
+                {/* Mobile Hamburger button*/}
                 <button
                     onClick={() => setMobileOpen(!mobileOpen)}
                     className="md:hidden flex flex-col gap-1.5 p-2"
